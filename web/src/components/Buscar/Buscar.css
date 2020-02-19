@@ -1,4 +1,4 @@
-.SearchBar {
+.Buscar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,14 +8,14 @@
     height: 25rem;
   }
   
-  .SearchBar-sort-options ul {
+  .Buscar-sort-options ul {
     display: flex;
     justify-content: center;
     margin-bottom: 2.22rem;
     color: #ffffff;
   }
   
-  .SearchBar-sort-options li {
+  .Buscar-sort-options li {
     cursor: pointer;
     width: 4.33rem;
     border-bottom: 1px solid #fff;
@@ -27,23 +27,23 @@
     transition: color .25s;
   }
   
-  .SearchBar-sort-options li:hover {
+  .Buscar-sort-options li:hover {
     color: #d4cfcf;
   }
   
-  .SearchBar-sort-options li.active,
-  .SearchBar-sort-options li.active:hover {
+  .Buscar-sort-options li.active,
+  .Buscar-sort-options li.active:hover {
     border-bottom: 1px solid #f0c36c;
     color: #f0c36c;
   }
   
-  .SearchBar-fields {
+  .Buscar-fields {
     display: flex;
     justify-content: center;
     margin-bottom: 2.88rem;
   }
   
-  .SearchBar-fields input {
+  .Buscar-fields input {
     width: 21rem;
     padding: .66rem 1rem;
     margin-right: 2.22rem;
@@ -53,15 +53,15 @@
     font-weight: 500;
   }
   
-  .SearchBar-fields input:last-child {
+  .Buscar-fields input:last-child {
     margin-right: 0;
   }
   
-  .SearchBar-submit {
+  .Buscar-submit {
     text-align: center;
   }
   
-  .SearchBar-submit a {
+  .Buscar-submit a {
     border-radius: 4px;
     padding: .72rem 1.7rem;
     background-color: #535ccc;
@@ -70,27 +70,27 @@
     transition: background-color .5s;
   }
   
-  .SearchBar-submit a:hover {
+  .Buscar-submit a:hover {
     cursor: pointer;
-    background-color: #a7874b;
+    background-color: #42c5e2;
   }
   
   @media only screen and (max-width: 560px) {
-    .SearchBar {
+    .Buscar {
       background-image: url('./background_search_mobile.jpg');
     }
   
-    .SearchBar-sort-options ul {
+    .Buscar-sort-options ul {
       margin-left: 2rem;
       margin-right: 2rem;
     }
   
-    .SearchBar-fields {
+    .Buscar-fields {
       flex-direction: column;
       align-items: center;
     }
   
-    .SearchBar-fields input {
+    .Buscar-fields input {
       margin-right: 0;
       margin-bottom: .86rem;
     }

@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import SearchBar from '../SearchBar/SearchBar'
-import BusinessList from '../BusinessList/BusinessList'
-import getData from '../until/getDtada'
+import Buscar from '../Buscar/Buscar'
+import CarteleraList from '../CarteleraList/CarteleraList'
+import getData from '../envios/getDd'
 class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      businesses: [],
+      contPelis: [],
       loading: true,
     }
     
@@ -15,7 +15,7 @@ class App extends React.Component {
   componentDidMount=async()=> {
     getData().then((data) => {
       this.setState({
-        businesses: data,
+        contPelis: data,
         loading: false,
       }) 
     });
@@ -24,10 +24,10 @@ class App extends React.Component {
   return (
     <div className="App">
   <h1>Super Cine Lis</h1>
-  <SearchBar />
+  <Buscar />
  
   
-  <BusinessList contenido={this.state.businesses}/>
+  <CarteleraList contPelis={this.state.contPelis}/>
   
 </div>
   )

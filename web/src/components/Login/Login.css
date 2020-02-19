@@ -1,0 +1,27 @@
+.submit {
+    text-align: center;
+  }
+  
+  .submit a {
+    border-radius: 4px;
+    padding: .72rem 1.7rem;
+    background-color: #535ccc;
+    color: #ffffff;
+    font-weight: 600;
+    transition: background-color .5s;
+  }
+  
+  .submit a:hover {
+    cursor: pointer;
+    background-color: #42c5e2;
+  }
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
